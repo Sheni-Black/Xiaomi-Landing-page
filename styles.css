@@ -1,0 +1,106 @@
+:root{
+    --border: 1px solid red;
+}
+
+@font-face {
+    font-family: Mi Sans;
+    src: url('MiSans-Normal.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mi Sans;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 2rem;
+    padding-inline: 2rem;
+    align-items: center;
+    border: var(--border);
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-content-left{
+    display: flex;
+    gap: 2rem;
+} 
+
+.nav-content-left > *{
+    padding-block: 0.5rem;
+}
+
+.nav-content-left > *:hover{
+    color: #ff6900;
+    border-bottom: 1px solid #ff6900;
+    transition: .2s;
+}
+
+.nav-content-right{
+    margin-left: auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.community{
+    display: flex;
+    gap: 2rem;
+}
+
+.community > *:hover{
+    color: #ff6900;
+    border-bottom: 1px solid #ff6900;
+    transition: .2s;
+}
+
+.community *{
+    padding-block: 0.5rem;
+}
+
+.profile{
+    padding-block: 0.5rem;
+}
+
+.hero{
+    height: auto;
+}
+
+/* Media queries for phones */
+@media (max-width: 767px){
+
+}
+
+/* Media queries for tablets and ipads */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* Media queries for laptops */
+@media (min-width: 1024px){
+    
+}
