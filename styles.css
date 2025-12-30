@@ -16,9 +16,13 @@
 
 header{
     width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 nav{
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -26,9 +30,7 @@ nav{
     gap: 2rem;
     padding-inline: 2rem;
     align-items: center;
-    border: var(--border);
-    position: sticky;
-    top: 0;
+    box-shadow: 0 0.05rem 1rem 0.1rem black;
 }
 
 nav a{
@@ -87,17 +89,41 @@ nav a{
 }
 
 .hero{
+    width: 100%;
     height: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
 }
 
 .hero-img{
-    height: 80vh;
+    height: 75vh;
     width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
 }
 
-.hero-img img{
-    width: 100%;
-    height: 100%;
+.t-pro{
+    background-image: url(Images/fb8ca1c55df9fbbda7a172b1cd71fcc2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.poco{
+    background-image: url(Images/c569b9a435d3217181211911c022d6a2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.watch{
+    background-image: url(Images/66c45bc1ca54647aeed026362ffd0f42.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.smart-band{
+    background-image: url(Images/fea02b5919fa83d5ffa4299348de41ee.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
 }
 
 /* Media queries for phones */
